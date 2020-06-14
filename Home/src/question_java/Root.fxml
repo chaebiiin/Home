@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="question_java.QuizController">
+	<children>
+		<Label contentDisplay="CENTER" layoutX="250.0" layoutY="39.0" prefHeight="50.0" prefWidth="200.0" text="SQL 기출 문제 " textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+			<font>
+				<Font size="28.0" />
+			</font>
+		</Label>
+      <TableView fx:id="quiz" layoutX="119.0" layoutY="89.0" prefHeight="90.0" prefWidth="450.0" />
+      <Group>
+         <children>
+            <TreeTableView fx:id="select1"  layoutX="116.0" layoutY="200.0" prefHeight="60.0" prefWidth="457.0" />
+            <TreeTableView fx:id="select2"  layoutX="116.0" layoutY="275.0" prefHeight="60.0" prefWidth="457.0" />
+            <TreeTableView  fx:id="select3" layoutX="116.0" layoutY="350.0" prefHeight="60.0" prefWidth="457.0" />
+         </children>
+      </Group>
+		<Button layoutX="273.0" layoutY="456.0" mnemonicParsing="false" onAction="#handleBtnOkAction" text="확인" />
+		<Button layoutX="381.0" layoutY="457.0" mnemonicParsing="false" onAction="#handleBtnCancelAction" text="취소" />
+	</children>
+</AnchorPane>
