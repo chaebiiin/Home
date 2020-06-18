@@ -1,7 +1,7 @@
 package sec05.exam01_runnable;
 
 public class RunnableExample {
-public static void main(String[] args) {
+	public static void main(String[] args) {
 //	Runnable runnable = () ->{};
 //	for (int i=0;i<10; i++) {
 //		System.out.println(i);
@@ -9,11 +9,12 @@ public static void main(String[] args) {
 //	Thread thread = new Thread(runnable);
 //	thread.start();
 
-	Thread thread = new Thread(() -> { //람다 표현식.
-		for (int i=0;i<10; i++) {
-			System.out.println(i);
-		}
-	});
-	thread.start();
-}
+//람다 표현식.
+		Thread thread = new Thread(() -> {
+			for (int i = 0; i < 10; i++) {
+				System.out.println(i);
+			}
+		});
+		thread.start();
+	}
 }

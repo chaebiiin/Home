@@ -8,7 +8,7 @@ import java.util.function.ToIntFunction;
 public class FunctionExample {
 	private static List<Student>list = Arrays.asList(
 			new Student("김원식", 99, 88),
-			new Student("한상혁", 65, 95)
+			new Student("이재환", 65, 95)
 			);
 	
 	public static void printString(Function<Student, String> function) {
